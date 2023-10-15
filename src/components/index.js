@@ -9,6 +9,7 @@ import PostCard from "./PostCard";
 import Select from "./Select";
 import Signup from "./Signup";
 import Login from "./Login";
+import RTE from './RTE'
 export {
     Header,
     Footer,
@@ -20,5 +21,6 @@ export {
     PostCard,
     Select,
     Signup,
-    Login
+    Login,
+    RTE
 }
