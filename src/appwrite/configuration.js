@@ -13,7 +13,7 @@ export class Service{
 
     this.databases = new Databases(this.client);
     this.bucket = new Storage(this.client);
-          
+        
    }
 
    async createPost({title, slug, content, featuredImage, status, userId}){
@@ -76,7 +76,7 @@ export class Service{
             slug
         )
     } catch (error) {
-        console.log("Appwrite service :: deletePost :: error", error);
+        console.log("Appwrite service :: getPost :: error", error);
         
     }
    }
