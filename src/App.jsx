@@ -22,11 +22,11 @@ function App() {
        .finally(()=> setIsLoading(false))
   }, [])
 
-  return !isloading && <div className='min-h-screen flex flex-wrap content-between bg-orange-700 text-white text-3xl'>
+  return !isloading && <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
     <div className='w-full block'>
       <Header />
-      <main className='bg-white'>
-        {/* <Outlet /> */}
+      <main className='py-8'>
+        <Outlet />
       </main>
       <Footer />
     </div>

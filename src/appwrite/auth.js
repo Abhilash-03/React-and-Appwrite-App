@@ -19,7 +19,7 @@ export class AuthService{
     
     if(userAccount){
         // call another function (redirect login if sing-up successfull)
-        return await this.login({email, password})
+        return this.login({email, password})
     }
     else{
         return userAccount;
@@ -46,7 +46,7 @@ export class AuthService{
 
    async logout(){
     try{
-       return await this.account.deleteSessions();
+        await this.account.deleteSessions();
     }catch(error){
         console.log("Appwrite service :: logout :: error", error);
     }
